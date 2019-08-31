@@ -54,7 +54,7 @@ function painting(canvas) {
         drawPoint(x, y, ctx.radius)
       }
       else {
-        ctx.clearRect(x - 5, y - 5, 10, 10)
+        ctx.clearRect(x - 10, y - 10, 20, 20)
       }
     }
     canvas.onmousemove = (e) => {
@@ -68,7 +68,7 @@ function painting(canvas) {
           previousPoint = newPoint
         }
         else {
-          ctx.clearRect(x - 5, y - 5, 10, 10)
+          ctx.clearRect(x - 10, y - 10, 20, 20)
         }
       }
     }
